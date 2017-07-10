@@ -1,7 +1,7 @@
 class StudentsController < ApplicationController
 
   def index
-    @students = Student.pluck(:last_name, :first_name)
+    @students = Student.all
   end
 
   def show
